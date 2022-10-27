@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="fonts/icomoon/style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+    <title>Restaurant</title>
+  </head>
+  <body id="body">
+    <header>
+      <nav class="container">
+        <div class="row">
+          <div class="col-3">
+            <img
+              class="img-fuild"
+              src="./assets/img/signature.png"
+              alt="signature"
+            />
+          </div>
+          <div
+            class="col-9 row justify-content-end align-items-center text-align-center"
+          >
+            <div class="col-md-2" ><a href="#carte"><p>Carte</p></a></div>
+            <div class="augh col-md-2"> <a href="#avis"><p>Témoignages</p></a></div>
+            <div class="col-md-2"> <a href="#reservation"><p>Réservation</p></a></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="imgex">
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/makereservation_dark.jpg"
+              alt="Los Angeles"
+              class="d-block"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/jamboncru.jpg"
+              alt="Chicago"
+              class="d-block"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/boeuf.jpg"
+              alt="New York"
+              class="d-block"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+    <section class="menu3 container">
+      <div class="suggestions row justify-content-around">
+        <div class="suggest1 col-md-3 col-9">
+          <div class="suggest1Title">
+            <p>Nos Menus</p>
+          </div>
+          <div class="suggest1Box">
+            <img class="img-fluid" src="./assets/img/food_1_dark.jpg" alt="" />
+          </div>
+          <div class="suggest1Text">
+            <span>Voir la carte</span><br />
+            <span>de nos Menus</span><br />
+          </div>
+          <div class="suggest1button">
+            <a href="#carte" ><button type="button">Notre Carte</button></a>
+          </div>
+        </div>
+        <div class="suggest1 col-md-3 col-9">
+          <div class="suggest1Title">
+            <p>Réservations</p>
+          </div>
+          <div class="suggest1Box">
+            <img
+              class="img-fluid"
+              src="./assets/img/makereservation_dark.jpg"
+              alt=""
+            />
+          </div>
+          <div class="suggest1Text">
+            <span>Venez réservez</span><br />
+            <span>votre table !</span><br />
+          </div>
+          <div class="suggest1button">
+            <a href="#reservation" ><button type="button">Réservez</button></a>
+          </div>
+        </div>
+        <div class="suggest1 col-md-3 col-9">
+          <div class="suggest1Title">
+            <p>Vos Avis</p>
+          </div>
+          <div class="suggest1Box">
+            <img class="img-fluid" src="./assets/img/event_3_dark.jpg" alt="" />
+          </div>
+          <div class="suggest1Text">
+            <span>Les avis de</span><br />
+            <span>nos récents clients</span><br />
+          </div>
+          <div class="suggest1button">
+            <a href="#avis" ><button type="button">Avis</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTE MENU -->
+    <h2 id="carte" class="titleCarte">La carte</h2>
+    <!-- début de la carte menu déroulant avec les différentes sections entrées, Viandes, poissons... -->
+    <div class="carte row">
+      <div class="col-12">
+        <div class="tabs">
+          <div class="tab tab1border">
+            <input class="hiddencheckbox" type="checkbox" id="chck1" />
+            <label class="tab-label" for="chck1">Entrées</label>
+            <div class="tab-content">
+              <div class="row">
+                <div class="col-md-3">
+                  <img alt="auyv" src="./assets/img/saladecesar.jpg" />
+                </div>
+                <div class="col-md-3">
+                  <div class="mealname"><p>Salade césar</p></div>
+                  <hr />
+                  <div>
+                    <p>
+                      Poulet fermier tranché et grillé aux herbes, mélange de salade croquante, écrasé d'avoat, suprêmes de pamplemousse, cubes de panisse, copeaux de parmesan, tomates fraiches, sauce américaine.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <img alt="auyv" src="./assets/img/saumon.jpg" />
+                </div>
+                <div class="col-md-3">
+                  <div class="mealname"><p>Saumon fumé</p></div>
+                  <hr />
+                  <div>
+                    <p>
+                      Petites tranches de saumon fumé disposées sur une tartine de crème fraiche citronée accompagné de ses petites herbes fraiches et sa petite louche de caviar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row menurow">
+                <div class="col-md-3">
+                  <img alt="auyv" src="./assets/img/jamboncru.jpg" />
+                </div>
+                <div class="col-md-3">
+                  <div class="mealname"><p>Jambon cru</p></div>
+                  <hr />
+                  <div>
+                    <p>
+                      Fines tranches de Jambon cru AOP accompagnées par une salade composée de morceaux d'avocat, de petites billes de mozzarella, de tomates séchées, de choux rouge, ainsi que des feuilles de salades croquantes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Une row qui rassemble le titre (viandes) et les différents plats -->
+          <div class="tab">
+            <input class="hiddencheckbox" type="checkbox" id="chck2" />
+            <label class="tab-label" for="chck2">Viandes</label>
+            <div class="tab-content">
+              <!-- partie responsive bootstrap qui met les plats en ligne sur tel et les rassemble par deux sur une meme ligne sur un grand écran -->
+              <div class="row">
+                <div class="col-md-3">
+                  <img alt="auyv" src="./assets/img/boeuf.jpg" />
+                </div>
+                <div class="col-md-3">
+                  <div class="mealname"><p>Côte de boeuf</p></div>
+                  <hr />
+                  <div>
+                    <p>
+                      250g ou 500g de côte de boeuf AOP, avec son accompagnemant au choix ainsi que sa sauce aussi au choix.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <img alt="auyv" src="./assets/img/poulet.jpg" />
+                </div>
+                <div class="col-md-3">
+                  <div class="mealname"><p>Poulet</p></div>
+                  <hr />
+                  <div>
+                    <p>
+                      400g de poulet avec son accompagnemant au choix et sa sauce au choix.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row menurow">
+                <div class="col-md-3">
+                  <img alt="auyv" src="./assets/img/steak.jpg" />
+                </div>
+                <div class="col-md-3">
+                  <div class="mealname"><p>Steak 360g</p></div>
+                  <hr />
+                  <div>
+                    <p>
+                       360g de steack de boeuf AOP, avec son accompagnement au choix et sa sauce au choix.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab">
+            <input class="hiddencheckbox" type="checkbox" id="chck3" />
+            <label class="tab-label" for="chck3">Poissons</label>
+            <div class="tab-content">
+              <div class="row">
+                <div class="col-md-3">
+                  <img alt="auyv" src="./assets/img/saumon-riz.jpg" />
+                </div>
+                <div class="col-md-3">
+                  <div class="mealname"><p>Saumon riz</p></div>
+                  <hr />
+                  <div>
+                    <p>
+                      Tranche de saumon cuit à la vapeur sur son lit de riz et de tranche de carotte accompagné d'une petite crème fraiche.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <img alt="auyv" src="./assets/img/food_10_dark.jpg" />
+                </div>
+                <div class="col-md-3">
+                  <div class="mealname"><p>Tartare de thon rouge</p></div>
+                  <hr />
+                  <div>
+                    <p>
+                      Tartare de thon rouge fraichement péché accompagné d'une sauce tomate ainsi que des accompagnement frais.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab">
+          <input class="hiddencheckbox" type="checkbox" id="chck4" />
+          <label class="tab-label" for="chck4">Pâtes</label>
+          <div class="tab-content">
+            <div class="row">
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/patescarbo.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Pâtes carbonara</p></div>
+                <hr />
+                <div>
+                  <p>
+                    Plat de pâtes fraiche façon carbonara avec son oeuf disposé au dessus et accompagné de parmesan rapé.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/patesbolo.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Pâtes bolognaise</p></div>
+                <hr />
+                <div>
+                  <p>
+                    PLat de pâtes fraiches façon bolognaise avec sa viande hachée et sa sauce tomate.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row menurow">
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/lasagnes.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Lasagnes</p></div>
+                <hr />
+                <div>
+                  <p>
+                    Plat de lasagne fait maison avec sa viande haché, sa sauce tomate et sa sauce béchamel sur le dessus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab">
+          <input class="hiddencheckbox" type="checkbox" id="chck5" />
+          <label class="tab-label" for="chck5">Pizza</label>
+          <div class="tab-content">
+            <div class="row">
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/pizza-4-fromages.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Pizza 4 fromages</p></div>
+                <hr />
+                <div>
+                  <p>
+                    Pizza faites au four traditionnel avec ses quatres fromages autenthiques : chèvre, comté, bleu et cheddar.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/pizza-napoletana.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Pizza napoletana</p></div>
+                <hr />
+                <div>
+                  <p>
+Pizza originaire de Naples cuite au four tradititionnel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row menurow">
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/pizza_de_la_mer.png" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Pizza fruit de mer</p></div>
+                <hr />
+                <div>
+                  <p>
+Pizza crée de toute pièces par nos chefs, avec essentiellement des produits de la mer récupéré le matin au marché.                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/pizza_champignon.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Pizza reine</p></div>
+                <hr />
+                <div>
+                  <p>
+                    Pizza faites au four traditionnel, composée du base sauce tomate et accompagnée de morceaux de champignon frais ainsi que des morceaux de parmesan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab">
+          <input class="hiddencheckbox" type="checkbox" id="chck6" />
+          <label class="tab-label" for="chck6">Dessert</label>
+          <div class="tab-content">
+            <div class="row">
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/tiramisu.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Tiramisu</p></div>
+                <hr />
+                <div>
+                  <p>
+                    Déssert traditionnel Italien accompagné de son petit café.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img
+                  alt="auyv"
+                  src="./assets/img/cover-tarte-1920x960-1-1024x512.jpg"
+                />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Tarte au citron</p></div>
+                <hr />
+                <div>
+                  <p>
+                    Part de tarte au citron corse frais meringué.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row menurow">
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/dameblanche.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Dame blanche</p></div>
+                <hr />
+                <div>
+                  <p>
+                    Boule de glace accompagnée de chantilly, copeaux de chocolat noir, biscuit cigare ainsi qu'un coulit de chocolat noir.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/fondantchoco.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Fondant au chocolat</p></div>
+                <hr />
+                <div>
+                  <p>
+                    Part de fondant au chocolat noir 45%.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab lasttabborder">
+          <input class="hiddencheckbox" type="checkbox" id="chck7" />
+          <label class="tab-label" for="chck7">Boissons</label>
+          <div class="tab-content">
+            <div class="row">
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/vinrouge.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Vin rouge 25cl</p></div>
+                <hr />
+                <div>
+                  <p>
+                    Verre de 25cl de Delta Negoce Bordeaux de Dauzac.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/biere.jgp" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Bière blonde 50cl</p></div>
+                <hr />
+                <div>
+                  <p>
+                    50cl d'une bière blonde au choix
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row menurow">
+              <div class="col-md-3">
+                <img alt="auyv" src="./assets/img/coca.jpg" />
+              </div>
+              <div class="col-md-3">
+                <div class="mealname"><p>Coca</p></div>
+                <hr />
+                <div><p>Verre de 50cl de Coca au choix</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+
+    <h2 id="chefgalerie" class="titlegalerie">Galerie du chef</h2>
+    <!--  FIN CARTE MENU -->
+
+    <div class="slideshow-container">
+
+      <center>
+      <div class="mySlides fade">
+        <img src="./assets/img/food_1_dark.jpg" style="width:50%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="./assets/img/food_7_dark.jpg" style="width:50%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="./assets/img/food_5_dark.jpg" style="width:50%">
+      </div>
+      
+      <div class="mySlides fade">
+          <img src="./assets/img/food_4_dark.jpg" style="width:50%">
+      </div>
+      
+      <div class="mySlides fade">
+          <img src="./assets/img/food_11_dark.jpg" style="width:50%">
+      </div>
+      
+      </center>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      
+      <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); 
+      }
+      </script>
+      
+
+<h2 id="avis" class="titleCarte">Vos avis</h2>
+
+    <!-- AVIS -->
+
+    <div class="accordeon">
+      <ul class="ul">
+        <li class="li">
+          <div>
+            <a>
+              <h2>Julie</h2>
+              <p>
+                " Nous sommes tombés par hasard sur ce resto après quelques
+                fakes avis sur d'autre resto.<br />Ce resto est très bon pour le
+                prix. Très forte ambiance et affluence en ce dimanche soir."
+              </p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </a>
+          </div>
+        </li>
+        <li class="li">
+          <div>
+            <a>
+              <h2>Emma</h2>
+              <p>
+                " Très bon accueil et superbe service ! Des personnes très
+                sympathiques et cordiaux.<br />Nous avons testés plusieurs mets
+                et avons bien apprécié ce que nous avons mangé !"
+              </p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </a>
+          </div>
+        </li>
+        <li class="li">
+          <div>
+            <a>
+              <h2>Laura</h2>
+              <p>
+                " Cet endroit propose des plats frais et savoureux à un très bon
+                prix.<br />Le personnel est très attentionné et serviable.
+                Meilleur endroit à Amiens. Recommandé !"
+              </p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- FORMULAIRE -->
+
+    <div id="reservation" class="resTitle">
+      <h2>Réservation</h2>
+    </div>
+    <form>
+      <div class="container justify-content-center m-1">
+        <div class="3 row">
+          <div class="row col-md-4">
+            <div class="col-4 p-2 col-md-12"><label>Nom</label></div>
+            <div class="col-8 p-2 col-md-12">
+              <input
+                class="champ"
+                type="text"
+                placeholder="Saisissez votre nom"
+              />
+            </div>
+          </div>
+          <div class="row col-md-4">
+            <div class="col-4 p-2 col-md-12"><label>Email</label></div>
+            <div class="col-8 p-2 col-md-12">
+              <input
+                class="champ"
+                type="email"
+                placeholder="Saisissez votre Email"
+              />
+            </div>
+          </div>
+          <div class="row col-md-4">
+            <div class="col-4 p-2 col-md-12"><label>Date</label></div>
+            <div class="col-8 p-2 col-md-12">
+              <input placeholder="." class="champ" type="date" />
+            </div>
+          </div>
+        </div>
+        <div class="3 row">
+          <div class="row col-md-4">
+            <div class="col-4 p-2 col-md-12"><label>Horaire</label></div>
+            <div class="col-8 p-2 col-md-12">
+              <input placeholder="zeghb" type="time" class="champ" />
+            </div>
+          </div>
+          <div class="row col-md-4">
+            <div class="col-4 p-2 col-md-12"><label>Personnes</label></div>
+            <div class="col-8 p-2 col-md-12">
+              <input
+                class="champ"
+                type="number"
+                placeholder="Nombre de personnes"
+              />
+            </div>
+          </div>
+          <div class="row col-md-4">
+            <div class="col-4 p-2 col-md-12"><label>Téléphone</label></div>
+            <div class="col-8 p-2 col-md-12">
+              <input
+                class="champ"
+                type="tel"
+                name="tel"
+                placeholder="Numéro téléphone"
+                pattern="^9[0-9]{7}"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="3 row">
+          <div class="row col-md-4">
+            <div class="col-4 p-2 col-md-12">
+              <label class="" for="pet-select">Préférence</label>
+            </div>
+            <div class="col-8 p-2 col-md-12">
+              <select
+                title="place"
+                class="champ"
+                name="place"
+                id="place-select"
+              >
+                <option class="champ" value="">
+                  --Préférence pour votre place--
+                </option>
+                <option class="champ" value="Salle">En Salle</option>
+                <option class="champ" value="Terrasse">En Terrasse</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col pt-3">
+            <input class="button" type="submit" value="Réserver" />
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- FOOTER TEST -->
+
+    <footer>
+      <div class="container footerbandeau">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-10 troisrubriques">
+            <div>
+              <h3>RUBRIQUES</h3>
+              <hr />
+            </div>
+            <div>
+              <div><a href="#body"><p>Accueil</p></a></div>
+              <hr />
+              <div><a href="#carte"><p>Notre carte</p></a></div>
+              <hr />
+              <div><a href="#avis"><p>Avis des clients</p></a></div>
+              <hr />
+              <div><a href="#reservation"><p>Réservation</p></a></div>
+              <hr />
+              <div> <a href="#chefgalerie"><p>Notre restaurant en image</p></a></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-10 troisrubriques">
+            <div>
+              <h3>HORRAIRES</h3>
+              <hr />
+            </div>
+            <div>
+              <div><p>Lundi : 12:00 - 14:00 / 19:00 - 22:00</p></div>
+              <hr />
+              <div><p>Mardi : 12:00 - 14:00 / 19:00 - 22:00</p></div>
+              <hr />
+              <div><p>Mercredi : 12:00 - 14:00 / 19:00 - 22:00</p></div>
+              <hr />
+              <div><p>Jeudi : 12:00 - 14:00 / 19:00 - 22:00</p></div>
+              <hr />
+              <div><p>Vendredi : 12:00 - 14:00 / 19:00 - 23:00</p></div>
+              <hr />
+              <div><p>Samedi : 12:00 - 14:00 / 19:00 - 23:00</p></div>
+              <hr />
+              <div><p>Dimanche : fermé</p></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-10 troisrubriques">
+            <div>
+              <h3>NOUS CONTACTER</h3>
+              <hr />
+            </div>
+            <div>
+              <div><p>70 Rue des Jacobins, 80000 Amiens</p></div>
+
+              <div><p>Tel : 09.00.00.00.00</p></div>
+              <hr />
+              <div><button>Contactez-nous</button></div>
+              <hr />
+              <div><p>Nos réseaux</p></div>
+              <div class="réseaux">
+                <div><img src="./assets/img/twitter2.png" /></div>
+                <div><img src="./assets/img/facebook2.png" /></div>
+                <div>
+                  <img class="insta" src="./assets/img/instagram2.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script> -->
+  </body>
+</html>
