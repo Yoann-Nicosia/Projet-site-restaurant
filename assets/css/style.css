@@ -108,22 +108,23 @@ header p {
 }
 
 .imgex {
-  height: 90vh;
+  height: auto;
   position: relative;
   min-width: 100%;
   object-position: center center;
 }
 
 .carousel-inner {
-  height: 90vh;
+  height: auto;
 }
 
 .carousel-item {
-  height: 90vh;
+  height: auto;
 }
 
 .carousel-indicators {
-  margin-bottom: 10vh;
+  margin-bottom: auto;
+  margin-bottom:60px;
 }
 
 .carousel-caption {
